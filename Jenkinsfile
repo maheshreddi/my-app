@@ -8,12 +8,12 @@ pipeline {
         }
         stage('--test--') {
             steps {
-                sh "mvn test"
+                bat "mvn test"
             }
         }
         stage('--package--') {
             steps {
-                sh "mvn package"
+                bat "mvn package"
             }
         }
     }
